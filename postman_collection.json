@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "0d8209ff-802f-4ebd-b177-5dcc897b09cd",
+		"name": "CryptoAssets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "assets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/kraken/assets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kraken",
+						"assets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assetpairs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/kraken/assetpairs?asset=XBT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kraken",
+						"assetpairs"
+					],
+					"query": [
+						{
+							"key": "asset",
+							"value": "XBT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ohlc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/kraken/ohlc?pair=XXBTZEUR&interval=60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kraken",
+						"ohlc"
+					],
+					"query": [
+						{
+							"key": "pair",
+							"value": "XXBTZEUR"
+						},
+						{
+							"key": "interval",
+							"value": "60"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,19 @@
+.chartAdd {
+margin-top: 10px;
+}
+
+.chartAdd h1 {
+  padding: unset;
+  margin: unset;
+  margin-left: 10px;
+  }
+
+.chartAdd .asset button {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.chartAdd .pair button {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}

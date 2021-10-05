@@ -1,0 +1,52 @@
+.item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 8px -5px #000000;
+  background-color: #999999;
+}
+
+.item .header {
+  background-color: #000000;
+  align-items: center;
+  padding: 5px;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
+.item .header h2 {
+  color: #ffffff;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+
+.item .body {
+  background-color: #ffffff;
+  padding-top: 20px !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.item .body canvas {
+  left: 0;
+  right: 0;
+}
+
+.item .btn-toolbar {
+  padding-bottom: 0px;
+  margin-bottom: 0px !important;
+}
+.item .btn-group button {
+ background-color:unset;
+ border: unset;
+}
+
+.item .btn-group button.active {
+  background-color: white;
+  color: black;
+  border: unset;
+ }
+
+ .item .reset {
+   display: none;
+ }
