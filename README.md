@@ -19,7 +19,7 @@ An simple web application to view asset charts from kraken exchange public api
 ## Download
 
 ```bash
-git clone https://github.com/vaidis/CryptoAssets-Monitor.git
+git clone https://github.com/vaidis/Crypto-Assets-Monitor.git
 ```
 
 ## Install
