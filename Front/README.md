@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-git clone https://github.com/vaidis/CryptoAssets-Monitor.git
+git clone https://github.com/vaidis/Crypto-Assets-Monitor.git
 cd CryptoAssets-Monitor/Front
 npm install
 ```
