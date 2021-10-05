@@ -25,7 +25,7 @@ git clone https://github.com/vaidis/Crypto-Assets-Monitor.git
 ## Install
 
 ```bash
-cd CryptoAssets-Monitor
+cd Crypto-Assets-Monitor
 
 # Back-end
 cd Back
