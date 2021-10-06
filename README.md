@@ -12,9 +12,10 @@ An simple web application to view asset charts from kraken exchange public api
 - Candlestick charts
 - With Trade volume
 - With EMA12 and EMA26 indicators
+- Responsive Design
 
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](./screenshot.png)
 
 ## Download
 
@@ -50,7 +51,6 @@ npm start
 
 ## Todo
 
-- [] Responsive design
 - [] Tests
 - [] Theming error and loading messages
 - [] More indicators
