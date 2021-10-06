@@ -27,7 +27,8 @@ export interface IOHLCData {
 }
 
 export interface ChartProps {
-  data: IOHLCData[]
+  data: IOHLCData[];
+  itemWidth: number;
 }
 
 export interface InitialData {

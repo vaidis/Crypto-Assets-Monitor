@@ -11,14 +11,14 @@ const ChartAdd: React.FC = (): JSX.Element => {
   const [asset, setAsset] = React.useState<string>('');
 
   return (
-    <Container className="chartAdd">
+    <Container id="chartAdd" className="chartAdd">
       <Row>
         <Col>
           <Stack direction="horizontal">
-            <Col xs={2} md={2}>
+            <Col xs={4}>
               <h1>Charts</h1>
             </Col>
-            <Col xs={3} md={3} className="ms-auto">
+            <Col xs={8} className="d-md-flex justify-content-md-end">
               <Stack direction="horizontal">
                 <ChartAddAssets assetState={[asset, setAsset]} />
                 <ChartAddPairs assetState={[asset, setAsset]} />

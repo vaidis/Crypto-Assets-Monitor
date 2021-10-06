@@ -27,7 +27,7 @@ import { ChartProps, IOHLCData } from './chart-types';
 
 
 const Sticks = (props: ChartProps): JSX.Element => {
-  const { data: InitialData } = props;
+  const { data: InitialData, itemWidth } = props;
 
   const margin = { left: 0, right: 0, top: 0, bottom: 0 };
   const pricesDisplayFormat = format(".2f");
@@ -98,7 +98,7 @@ const Sticks = (props: ChartProps): JSX.Element => {
             <ChartCanvas
               height={chartHeight + 10}
               ratio={1}
-              width={1100}
+              width={itemWidth}
               data={data}
               displayXAccessor={displayXAccessor}
               seriesName="Data"

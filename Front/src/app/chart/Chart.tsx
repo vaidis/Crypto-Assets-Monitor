@@ -13,6 +13,11 @@ import './chart.css'
 
 // Wraps the Sticks component and provide it with the chart data
 const ChartComponent: FC<IProps> = (props): JSX.Element => {
+
+  var currentWidth: number | undefined = document.getElementById('chartAdd')?.offsetWidth;
+  var initialWidth = currentWidth ? currentWidth : 540;
+  const [width, setWidth] = React.useState<number>(initialWidth - 40 );
+
   const parseDate = timeParse("%s");
   const dispatch: AppDispatch = useDispatch();
   const { id, pair } = props;
@@ -88,9 +93,18 @@ const ChartComponent: FC<IProps> = (props): JSX.Element => {
     )
   }
 
+  // on resize set the chart width according to the width of the header
+  React.useEffect(() => {
+    function handleResize() {
+      var width = document.getElementById('chartAdd')?.offsetWidth;
+      const divWidth: number = width ? width : 540;
+      setWidth(divWidth - 40);
+    }
+    window.addEventListener('resize', handleResize)
+  }, []);
+
   return (
     <Container className="item">
-
       <Row className="header">
         <Stack direction="horizontal">
 
@@ -117,7 +131,7 @@ const ChartComponent: FC<IProps> = (props): JSX.Element => {
         <Stack direction="horizontal" gap={3}>
           {isLoading && <div>Loading data...</div>}
           {error && <div>Error loading data...</div>}
-          {isSuccess && data?.result && <Sticks data={formatChartData(pair, data.result[pair])} />}
+          {isSuccess && data?.result && <Sticks itemWidth={width} data={formatChartData(pair, data.result[pair])} />}
         </Stack>
       </Row>
 
